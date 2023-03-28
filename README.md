@@ -13,6 +13,7 @@
   <img src="https://user-images.githubusercontent.com/107156650/228121747-1dc55848-1b7a-48ba-9e81-26ef7220a353.PNG">
   - airflow가 start_date 기준으로 자동으로 하루에 한번 크롤링 진행후 postgres DB에 저장
   - dags가 success 또는 fail 이면 email로 자동으로 alert
+
 ### front-end    
   
   <img src="https://user-images.githubusercontent.com/107156650/228020316-e4967f8a-6107-4386-9002-433f16df36eb.JPG">
