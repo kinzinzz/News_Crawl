@@ -17,13 +17,14 @@ word_list = news_data['news_title'].str.replace(pat=r'[^\w]', repl=r' ', regex=T
 word_list = word_list.apply(lambda x: x.split(' '))
 word_list = pd.Series(word_list.sum())
 
+# 랜덤으로 뉴스 5개 선택
 df = df.sample(n=5)
 st.markdown(df.to_html(render_links=True), unsafe_allow_html=True)
 
 
 # 타이틀
 st.title(f"뉴스로 보는 {str_datetime} 키워드")
-# 상위 10개 키워드
+# 상위 5개 키워드
 cnt = 1
 keywords_list = list(word_list.value_counts()[0:6].to_dict().keys())
 for key in keywords_list:
