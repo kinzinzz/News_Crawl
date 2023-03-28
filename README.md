@@ -14,6 +14,7 @@
   - dags가 success 또는 fail 이면 email로 자동으로 alert
 - front-end    
   <img src="https://user-images.githubusercontent.com/107156650/228020316-e4967f8a-6107-4386-9002-433f16df36eb.JPG">
+  - 크롤링한 데이터가 저장된 DB에서 데이터 추출
   - 뉴스 제목의 특수문자 제거후 Serise로 변환
   - Series를 sum을 이용해 하나의 리스트로 만들고 count 이용해 가장 많은 단어 5개 추출
   - 크롤링한 뉴스들중 랜덤으로 5개만 front-end 나타냄
